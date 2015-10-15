@@ -1,4 +1,6 @@
-# WSL (Wicked Sick Language pronounced like wassail)
+# WSL 
+(Wicked Sick Language pronounced like wassail)
+
 Domain-specific language intended to represent user interfaces.
 
 ## Objectives
