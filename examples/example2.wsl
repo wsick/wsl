@@ -1,0 +1,20 @@
+Application {
+    Grid {
+        x:Name="LayoutRoot
+        Grid.RowDefinitions [
+            RowDefinition { Height="auto" }
+            RowDefinition { Height="*" }
+        ]
+        /Border {
+            Grid.Row="0"
+            /TextBlock {
+                Text="Header"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+            }
+        }
+        /Grid {
+            Grid.Row="1"
+        }
+    }
+}
