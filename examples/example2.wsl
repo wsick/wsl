@@ -8,9 +8,8 @@ Application {
         /Border {
             Grid.Row="0"
             /TextBlock {
-                Text="Header"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Center"
+                HorizontalAlignment="Left" VerticalAlignment="Center"
+                Text=$"HeaderText" Style=%"HeaderStyle"
             }
         }
         /Grid {
