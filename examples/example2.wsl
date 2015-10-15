@@ -1,19 +1,19 @@
 Application {
     Grid {
-        x:Name="LayoutRoot"
+        x:Name=LayoutRoot
         Grid.RowDefinitions [
-            RowDefinition { Height="auto" }
-            RowDefinition { Height="*" }
+            RowDefinition { Height=auto }
+            RowDefinition { Height=* }
         ]
         /Border {
-            Grid.Row="0"
+            Grid.Row=0
             /TextBlock {
-                HorizontalAlignment="Left" VerticalAlignment="Center"
-                Text=$"HeaderText" Style=%"HeaderStyle"
+                HorizontalAlignment=Left VerticalAlignment=Center
+                Text=$HeaderText Style=%HeaderStyle
             }
         }
         /Grid {
-            Grid.Row="1"
+            Grid.Row=1
         }
     }
 }
