@@ -1,19 +1,19 @@
-Application {
-    Grid {
-        x:Name=LayoutRoot
-        Grid.RowDefinitions [
-            RowDefinition { Height=auto }
-            RowDefinition { Height=* }
-        ]
-        /Border {
-            Grid.Row=0
-            /TextBlock {
-                HorizontalAlignment=Left VerticalAlignment=Center
-                Text=$HeaderText Style=%HeaderStyle
-            }
+application {
+    grid [
+        x:name = "LayoutRoot"
+        grid.row-definitions {
+            row-definition [ height = "auto" ]
+            row-definition [ height = "*" ]
         }
-        /Grid {
-            Grid.Row=1
+    ] {
+        border [grid.row = 0] {
+            text-block [
+                horizontal-alignment = "left"
+                vertical-alignment = "center"
+                text = {{HeaderText}}
+                style = {{%HeaderStyle}}
+            ]
         }
+        grid [grid.row = 1]
     }
 }

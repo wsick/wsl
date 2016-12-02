@@ -1,12 +1,17 @@
-Application {
-    Grid x:Name="LayoutRoot" {
-        Grid.RowDefinitions {
-            RowDefinition Height="auto"
-            RowDefinition Height="*"
+application {
+    grid [
+        x:name = "LayoutRoot"
+        grid.row-definitions {
+            row-definition { "auto" }
+            row-definition { "*" }
         }
-        Border Grid.Row="0" {
-            TextBlock Text="Header" HorizontalAlignment="Left" VerticalAlignment="Center"
+    ] {
+        border [grid.row = "0"] {
+            text-block [
+                horizontal-alignment = "left"
+                vertical-alignment = "center"
+            ]{ "Header" }
         }
-        Grid Grid.Row="1"
+        grid [grid.row = "1"]
     }
 }
