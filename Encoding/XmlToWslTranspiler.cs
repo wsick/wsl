@@ -87,8 +87,15 @@ namespace Wsl.Encoding {
             var prev = ' ';
             foreach (var c in name) {
                 if (char.IsUpper(c)) {
-                    if (!(prev == ' ' || prev == '.'))
-                        Writer.Write("-");
+                    switch (prev) {
+                        case ' ':
+                        case '.':
+                        case '-':
+                            break;
+                        default:
+                            Writer.Write("-");
+                            break;
+                    }
                     Writer.Write(char.ToLower(c));
                 } else {
                     Writer.Write(c);
