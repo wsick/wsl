@@ -1,4 +1,7 @@
-application {
+application (
+    wslns="http://schemas.wsick.com/fayde"
+    wslns:x="http://schemas.wsick.com/fayde/x"
+) {
     grid [
         x:name = "LayoutRoot"
         grid.row-definitions {

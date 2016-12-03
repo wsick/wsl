@@ -1,1 +1,7 @@
+### C#
+bin/
+debug/
+
+### IDEs
 .idea/
+.vscode/

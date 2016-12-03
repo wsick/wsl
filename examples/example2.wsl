@@ -11,7 +11,8 @@ application {
                 horizontal-alignment = "left"
                 vertical-alignment = "center"
                 text = {{HeaderText}}
-                style = {{%HeaderStyle}}
+                style = {$HeaderStyle}}
+
             ]
         }
         grid [grid.row = 1]
