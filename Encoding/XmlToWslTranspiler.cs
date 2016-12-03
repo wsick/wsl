@@ -81,7 +81,20 @@ namespace Wsl.Encoding {
                     Writer.Write(":");
                 }
             }
-            Writer.Write(name.LocalName);
+            WriteWslLocalName(name.LocalName);
+        }
+        private void WriteWslLocalName(string name) {
+            var prev = ' ';
+            foreach (var c in name) {
+                if (char.IsUpper(c)) {
+                    if (!(prev == ' ' || prev == '.'))
+                        Writer.Write("-");
+                    Writer.Write(char.ToLower(c));
+                } else {
+                    Writer.Write(c);
+                }
+                prev = c;
+            }
         }
         public void IncreaseIndent() {
             Indent += indentToken;
