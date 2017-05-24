@@ -1,0 +1,7 @@
+object        := <name> [ <attr-block> ] [ <content-block> ]
+attr-block    := <ws> '[' [ <ws> <attr> ]* <ws> ']'
+content-block := <ws> '{' [ <ws> <value> ]* <ws> '}'
+attr          := <ws> <name> <ws> '=' <ws> <value>
+name          := <ws> [ <identifier> ':' ] [ <identifier> '.' ] <identifier>
+identifier    := <ws> <alpha> <alphanumeric|_|->*
+value         := <object>|<raw-string>|<number>|<extension>

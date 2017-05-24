@@ -6,12 +6,12 @@ application {
             row-definition { "*" }
         }
     ] {
-        border [grid.row = "0"] {
+        border [grid.row = 0] {
             text-block [
                 horizontal-alignment = "left"
-                vertical-alignment = "center"
+                vertical-alignment   = "center"
             ]{ "Header" }
         }
-        grid [grid.row = "1"]
+        grid [grid.row = 1]
     }
 }

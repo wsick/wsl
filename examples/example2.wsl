@@ -9,9 +9,9 @@ application {
         border [grid.row = 0] {
             text-block [
                 horizontal-alignment = "left"
-                vertical-alignment = "center"
-                text = {{HeaderText}}
-                style = {{%HeaderStyle}}
+                vertical-alignment   = "center"
+                text                 = {{HeaderText}}
+                style                = {{%HeaderStyle}}
             ]
         }
         grid [grid.row = 1]
