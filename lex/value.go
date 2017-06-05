@@ -52,7 +52,7 @@ func endValue(l *Lexer) stateFn {
 
 	switch l.curNest() {
 	case TokenLeftCont:
-		return endContentBlock(l)
+		return value(l)
 	case TokenEquals:
 		l.unnest()
 		fallthrough

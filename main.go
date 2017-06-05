@@ -26,7 +26,7 @@ func main() {
 		for {
 			token := l.NextToken()
 			if token.Type() != lex.TokenWS {
-				fmt.Printf("%d:%d:%s\n", token.Line(), token.Col() + 1, token)
+				fmt.Printf("%d:%d:%s\n", token.Line(), token.Col()+1, token)
 			}
 			if token.Type() == lex.TokenEOF || token.Type() == lex.TokenError {
 				break
