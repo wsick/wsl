@@ -32,6 +32,8 @@ func attrKey(l *Lexer) stateFn {
 		// that's what we wanted, let lexer continue
 	case r == ':':
 		// this would imply a blank namespace alias, let lexer continue
+	case r == '@':
+		// attributes can start with '@' to support fake events
 	case r == eof:
 		return l.errorf("unexpected end of file in attribute key")
 	case r == ']':
